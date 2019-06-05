@@ -1,0 +1,51 @@
+Project 3 Artifact - Endy Iskandar Imam
+=======================================
+
+ARTIFACT FILES
+--------------
++ MAIN IMAGE: output.ppm
+  + SUPPLEMENTAL IMAGES:
+    - output-shadow.ppm (shows the shadow with a red background)
+    - output-hi-res.ppm (shows with extra samples per pixel)
+
+  The intersect algorithm for the sphere takes in the form of a quadratic that
+takes in a, b, and c, checking for the square root test (b^2 - 4ac) before
+getting the two t's from the equation and checking if both of them are positive.
+
+  The Phong Illumination Model is additive with the ambient along with the
+diffuse and specular of all lights that takes account of the direction TO the
+light and the direction TO the viewer.
+  Mentioning about the direction to the light, this is what it is used for
+testing occlusion where if that ray hits any spheres, it shouldn't account
+the diffuse and specular and thus don't account light at all.
+  When doing the diffuse and specular, I have to do a max test on the dot
+product so if the output value of the dot product is negative, just output 0 -
+which is to say, don't account for the iteration.
+  Speaking of dot product, finding the reflection, I typically done the
+heavy computation of an actual reflection
+
+  normalized(2 * (lightDir dot normal) * normal - lightDir)
+
+but I also done the half-vector approximation,
+
+  normalized(lightDir + toViewer)
+
+but preferably, I did the normal reflection for the short image. If it's for a
+bigger image however, then the half-vector is a good time-saving measure.
+  Finally for the reflection recursion, I used the formula for the reflection
+direction:
+
+  normalized(-2 * (ray dot normal) * normal + ray)
+
+and the origin is defined by that specific intersection from the old ray with
+its direction (which should be normalized) along with the distance from the
+rau's origin defined by t_min from the intersect test.
+
+  Some few little edits was with in regards for fidelity and correction. For
+correction of color, if any part of the output color exceeds 1, it outputs to 1
+to eliminate the loop back to 0.
+  As for fidelity, I edited the getDir to take in the float and not int so gran-
+ularity is available when I redone the renderPixel adding division of both
+the color input along with the division of the ray distribution, and that sample
+level is defined by sample_lv, which is a naive form of anti-aliasing but it's
+good enough for now.

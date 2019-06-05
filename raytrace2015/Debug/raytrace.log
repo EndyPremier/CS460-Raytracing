@@ -1,0 +1,10 @@
+﻿  main.cpp
+c:\users\endy iskandar imam\documents\school\senior fall 2018\cs460\assignments\assignment3\00-workingproject\raytrace2015\main.cpp(128): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\endy iskandar imam\documents\school\senior fall 2018\cs460\assignments\assignment3\00-workingproject\raytrace2015\main.cpp(152): warning C4018: '<': signed/unsigned mismatch
+c:\users\endy iskandar imam\documents\school\senior fall 2018\cs460\assignments\assignment3\00-workingproject\raytrace2015\main.cpp(191): warning C4018: '<': signed/unsigned mismatch
+c:\users\endy iskandar imam\documents\school\senior fall 2018\cs460\assignments\assignment3\00-workingproject\raytrace2015\main.cpp(203): warning C4018: '<': signed/unsigned mismatch
+c:\users\endy iskandar imam\documents\school\senior fall 2018\cs460\assignments\assignment3\00-workingproject\raytrace2015\main.cpp(395): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\endy iskandar imam\documents\school\senior fall 2018\cs460\assignments\assignment3\00-workingproject\raytrace2015\main.cpp(405): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\endy iskandar imam\documents\school\senior fall 2018\cs460\assignments\assignment3\00-workingproject\raytrace2015\main.cpp(411): warning C4305: 'argument': truncation from 'double' to 'float'
+  raytrace.vcxproj -> C:\Users\Endy Iskandar Imam\Documents\SCHOOL\Senior Fall 2018\CS460\Assignments\Assignment3\00-WorkingProject\raytrace2015\Debug\raytrace.exe
+  raytrace.vcxproj -> C:\Users\Endy Iskandar Imam\Documents\SCHOOL\Senior Fall 2018\CS460\Assignments\Assignment3\00-WorkingProject\raytrace2015\Debug\raytrace.pdb (Full PDB)
