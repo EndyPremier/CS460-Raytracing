@@ -1,6 +1,6 @@
 # Raytracing Rendering
 
-**Term:** Junior Spring 2018  
+**Term:** Senior Fall 2018  
 **Course:** CS460 - Graphics  
 **Date:** November 2018  
 **Tool:** Visual Studio  
